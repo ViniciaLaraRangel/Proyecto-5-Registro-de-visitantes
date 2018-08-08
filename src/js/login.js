@@ -1,1 +1,2 @@
-// JS p/ login.html
+// JS p/ login.html//
+alert('Ya está enlazado');
