@@ -1,6 +1,6 @@
 {
   "name": "social-network",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "src/index.html",
   "license": "MIT",
   "scripts": {
@@ -18,6 +18,20 @@
     "mocha": "^5.1.1",
     "nyc": "^11.7.1",
     "opener": "^1.4.3"
-  }
+  },
+  "description": "<!--Andy, este es para tí-->",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosceJaimes/Proyecto-5-Registro-de-visitantes.git"
+  },
+  "keywords": [
+    "html",
+    "javascript"
+  ],
+  "author": "\u001b[DAndres josceline Vianey Moserrat\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[J\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "bugs": {
+    "url": "https://github.com/JosceJaimes/Proyecto-5-Registro-de-visitantes/issues"
+  },
+  "homepage": "https://github.com/JosceJaimes/Proyecto-5-Registro-de-visitantes#readme"
 }
-
