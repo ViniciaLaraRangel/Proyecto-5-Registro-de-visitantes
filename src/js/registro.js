@@ -24,8 +24,6 @@ document.getElementById('safeinfo').addEventListener('click', event => {
 
   const anfitrion = document.getElementById('member').value;
 
-  // const hora = document.getElementById('registertime').value;
-  console.log(anfitrion);
   db.collection('register').add({
     name: nombre,
     email: correo,
