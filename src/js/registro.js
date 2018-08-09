@@ -12,8 +12,8 @@ firebase.initializeApp(config);
 
 var db = firebase.firestore();
 
-document.getElementById('safeinfo').addEventListener('click', e => {
-  e.preventDefault();
+document.getElementById('safeinfo').addEventListener('click', event => {
+  event.preventDefault();
   const nombre = document.getElementById('username').value;
 
   const correo = document.getElementById('useremail').value;
@@ -31,6 +31,6 @@ document.getElementById('safeinfo').addEventListener('click', e => {
   }).catch(error => {
     console.log('noooooo');
   });
-})
+});
 
 
