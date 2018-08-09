@@ -1,5 +1,8 @@
 /*CSS p/ registro.html*/
-h2 {
+.logo-t1 {
+    width: 150%;
+}
+/*h2 {
     text-align: center;
     font-size: 60px;
 }
@@ -29,4 +32,4 @@ form {
     padding: 20px 20px; 
     margin-top: 50%;
     
-}
+}*/
