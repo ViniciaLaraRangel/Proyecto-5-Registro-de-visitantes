@@ -18,14 +18,29 @@
     <title>Registro de invitados</title>
 </head>
 <body>
-    <!--Botón de prueba de bootstrap-->
-    <div class="container">
+        <h2>Buen dia </h2>
+         <form>
+                <div class="form-group">
+                  <label for="user">Nombre del invitado</label>
+                  <input type="text" class="form-control-lg" size="30px" id="user" placeholder="Ingresa tu nombre y apellido">
+                  <label for="mail">Ingresar correo</label>
+                  <input type="email" class="form-control-lg" id="mail" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+ 
+                </div>
+            <div class="date">
+                 <label for="day">Fecha</label>
+                 <input type="date"  id="day"> 
+            </div>
+
+     <!-- Botón de prueba de bootstrap -->
+    <div class="container-btn">
             <div class="row">
                 <div class="col-md-12">
-                        <button class="btn btn-dark">Enviar</button>
-                </div>
-            </div>
-        </div>
+                        <button class="btn btn-primary btn-lg active">Enviar</button>
+                </div> 
+            </div> 
+    </div>
     
     <!--Enlaces de bootstrap 4-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
