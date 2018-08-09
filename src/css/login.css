@@ -27,6 +27,40 @@ h1{
     height: 7%;
 }
 
+#contraseña{
+    display: inline-block;
+    border-color: grey;
+    margin-bottom: 0.5em;
+    margin-left: 35%;
+    width: 260px;
+    height: 7%;
+}
+
 .btn-dark{
     margin-left: 35%;
+}
+
+#correo1{
+    display: inline-block;
+    margin-bottom: 0.8em;
+    margin-left: 75%;
+    width: 260px;
+    border-color: grey;
+    height: 14%;
+    margin-top: 25%;
+    height: 19%;
+}
+
+#contraseña1{
+    display: inline-block;
+    margin-bottom: 0.8em;
+    margin-left: 75%;
+    width: 260px;
+    border-color: grey;
+    height: 19%;
+}
+
+.btn-register{
+    margin-left: 35%;
+    border: none;
 }
