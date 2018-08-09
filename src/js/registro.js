@@ -20,12 +20,16 @@ document.getElementById('safeinfo').addEventListener('click', event => {
 
   const fecha = document.getElementById('registerdate').value;
 
+  const hora = document.getElementById('registertime').value;
+
   // const hora = document.getElementById('registertime').value;
   console.log(nombre, correo);
   db.collection('register').add({
     name: nombre,
     email: correo,
-    date: fecha
+    date: fecha,
+    time: hora
+    
   }).then(result => {
     location.reload(true);
   }).catch(error => {
