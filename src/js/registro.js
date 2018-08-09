@@ -22,14 +22,16 @@ document.getElementById('safeinfo').addEventListener('click', event => {
 
   const hora = document.getElementById('registertime').value;
 
+  const anfitrion = document.getElementById('member').value;
+
   // const hora = document.getElementById('registertime').value;
-  console.log(nombre, correo);
+  console.log(anfitrion);
   db.collection('register').add({
     name: nombre,
     email: correo,
     date: fecha,
-    time: hora
-    
+    time: hora,
+    member: anfitrion
   }).then(result => {
     location.reload(true);
   }).catch(error => {
@@ -37,4 +39,5 @@ document.getElementById('safeinfo').addEventListener('click', event => {
   });
 });
 
+// window.
 

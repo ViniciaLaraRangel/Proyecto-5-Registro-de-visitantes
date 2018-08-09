@@ -32,6 +32,7 @@
                 <h2>Bienvenido</h2>
             </div>
             <form>
+                <!--Nombre completo-->
                 <div class="col-md-12">
                     <!--Nombre del invitado -->
                     <div class="form-group">
@@ -40,14 +41,30 @@
                     </div>
                 </div>
 
-                <!--Nombre y correo del invitado -->
+                <!--Correo del invitado -->
                 <div class="col-md-12">
                     <label for="mail">Correo electrónico</label>
                     <input type="email" id="useremail" class="form-control-lg" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
                 </div>
 
+                <!--Anfitrión al que visita-->
+                <div class="col-md-12 mt-3">
+                    <!--Nombre del invitado -->
+                    <div class="form-group">
+                        <label for="anfitrión">¿A quien visitas?</label>
+                        <select name="memberList" id="member" class="form-control-lg" required>
+                            <option value="" disabled selected>Selecciona</option>
+                            <option value="KNF ENGINEERING">KNF ENGINEERING</option>
+                            <option value="AU HAUS">AU HAUS</option>
+                            <option value="LABORATORIA">LABORATORIA</option>
+                            <option value="UPSOCIAL">UPSOCIAL</option>
+                            <!--<input type="text" id="memberName" class="form-control-lg mt-3" size="30px" id="member" placeholder="Ingresa nombre">-->
+                        </select>
+                    </div>
+                </div>
+
                 <!-- Input para agregar fecha del registro -->
-                <div class="col-md-12">
+                <div class="col-md-12 mt-3">
                     <div class="date">
                         <label for="day">Fecha</label>
                         <input type="date" id="registerdate">
@@ -55,15 +72,15 @@
                 </div>
 
                 <!-- Input para agregar fecha del registro -->
-                <div class="col-md-12">
-                        <div class="date">
-                            <label for="hour">Hora</label>
-                            <input type="time" name="hora" id="registertime">
-                        </div>
+                <div class="col-md-12 mt-3">
+                    <div class="date">
+                        <label for="hour">Hora</label>
+                        <input type="time" name="hora" id="registertime">
                     </div>
-    
+                </div>
+
                 <!-- Botón para enviar el registro -->
-                <div class="col-md-12">
+                <div class="col-md-12 mt-4">
                     <button id="safeinfo" class="btn btn-primary btn-lg active">Agregar</button>
                 </div>
             </form>
@@ -79,14 +96,14 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    
+
     <!--Enlace a firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">
     </script>
 
     <!--Enlaces a las hojas de JavaScript-->
     <script src="../js/registro.js"></script>
-    
+
 
 </body>
 
