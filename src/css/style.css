@@ -1,4 +1,11 @@
 /*CSS p/ index.html*/
+*{
+    margin-bottom: 50%;
+    margin-left: 50%;
+    height: 100vh;
+    padding: 50%;
+}
+
 .container{
     text-align: center;
     margin-top: 25%;
