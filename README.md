@@ -28,47 +28,29 @@ En Segundo lugar, detectamos un importante pain point con la miembro del coworki
 ## Historia de Usuarixs   :family:
 
 | Historia de Usuarix  Nr.1|
-
 |---|
-
 | Fecha:  08/08/2018|
-
 | Nombre de la Usuaria:  Diana Sánchez |
-
 | Edad: 28 años |
-
-| Título28 años |
-
+| Título: Registro |
 | Voy a una entrevista de trabajo a una empresa cuyas oficinas están en un coworking. Gracias al tráfico voy con el tiempo justo para la entrevista. Temo que al llegar al coworking tenga que perder mucho tiempo en registrarme. Me gustaría que el registro fuera más rápido y ágil para no llegar tarde a mi entrevista.|
 
 |Historia de Usuarix Nr.2|
-
 |---|
-
 |Fecha: 08/08/2018|
-
 |Nombre de la Usuaria: Jorge Bolaño|
-
 |Edad: 40 años|
-
 |Título: Administración|
-
 |Como gerente del edificio necesito de una plataforma en la que pueda ver la gente que entra a mi edificio. Su nombre, hora de entrada y su foto por si algún inconveniente surge. |
 
 ---------
 
 |Historia de Usuarix Nr.3|
-
 |---|
-
 |Fecha: 08/08/2018|
-
 |Nombre de la Usuaria: Adriana Sivan|
-
 |Edad: 35 años|
-
 |Título: Dar de alta|
-
 |Soy la CEO de una Startup. En la actualidad estoy en busca de nuevos colaboradores. Como soy una persona muy ocupada no puedo perder mucho tiempo en registrar a la gente que venga a las entrevistas (hablar con recepción, informar quién viene y a qué hora y demás) Requiero de una plataforma en la que en los menos clics posibles pueda ingresar al sistema la persona que entrará.|
 
 ## Mockups   :incoming_envelope:
