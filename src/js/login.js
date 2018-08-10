@@ -62,4 +62,3 @@ btnAddMember.addEventListener('click', (e) => {
   const promise = auth.createUserWithEmailAndPassword(ml, pass);
 });
 
-
