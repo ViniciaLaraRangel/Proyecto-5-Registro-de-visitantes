@@ -1,2 +1,2 @@
 // JS p/ index.html
-// alert('Prueba de enlace');
+alert('Prueba de enlace');
