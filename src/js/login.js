@@ -24,9 +24,11 @@ function registro() {
     // ...
   });
 }
+
 function entrar() {
   let correo1 = document.getElementById('correo1').value;
   let contraseña1 = document.getElementById('contraseña1').value;
+
   firebase.auth().signInWithEmailAndPassword(correo1, contraseña1).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
@@ -36,20 +38,25 @@ function entrar() {
     // ...
   });
 }
-// let nombre = document.getElementById('nombre');
-// let email = document.getElementById('correo');
-// let password = document.getElementById('contraseña');
-// let btnregister = document.getElementById('registrar');
 
-// btnregister.addEventListener('click', e =>{
-//   const name = nombre.values;
-//   const mail = email.values;
-//   const past = password.values;
-//   const promise = auth.createUserWithEmailAndPassword(userEmail, userPassword);
+let btnAddMember = document.getElementById('newMember')
+let names = document.getElementById('name');
+let email = document.getElementById('mail');
+let password = document.getElementById('ps');
 
-//   promise.then(function() {
-//     user = firebase.auth().currentUser;
-//     user.sendEmailVerification();
-//   });
-// });
+
+btnAddMember.addEventListener('click', (e) => {  
+  console.log(e);
+  let nm = names.value;
+  console.log(nm);
+  
+  let pass = password.value;
+  console.log(pass);
+  
+  let ml = email.value;
+  console.log(ml);
+  
+  const auth = firebase.auth();
+  const promise = auth.createUserWithEmailAndPassword(ml, pass);
+});
 
