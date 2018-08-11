@@ -1,5 +1,6 @@
 // JS p/ login.html//
 // alert('Ya está enlazado');
+
 var config = {
   apiKey: 'AIzaSyBBL2vG5GR2GZnUkLrpPZ-mDbyKie8nxgM',
   authDomain: 'registro-de-visitantes-a0747.firebaseapp.com',
@@ -41,24 +42,24 @@ function entrar() {
   });
 }
 
-let btnAddMember = document.getElementById('newMember')
-let names = document.getElementById('name');
-let email = document.getElementById('mail');
-let password = document.getElementById('ps');
+// let btnAddMember = document.getElementById('newMember')
+// let names = document.getElementById('name');
+// let email = document.getElementById('mail');
+// let password = document.getElementById('ps');
 
 
-btnAddMember.addEventListener('click', (e) => {  
-  console.log(e);
-  let nm = names.value;
-  console.log(nm);
+// btnAddMember.addEventListener('click', (e) => {  
+//   console.log(e);
+//   let nm = names.value;
+//   console.log(nm);
   
-  let pass = password.value;
-  console.log(pass);
+//   let pass = password.value;
+//   console.log(pass);
   
-  let ml = email.value;
-  console.log(ml);
+//   let ml = email.value;
+//   console.log(ml);
   
-  const auth = firebase.auth();
-  const promise = auth.createUserWithEmailAndPassword(ml, pass);
-});
-
+//   const auth = firebase.auth();
+//   const promise =
+ auth.createUserWithEmailAndPassword(ml, pass);
+// });
