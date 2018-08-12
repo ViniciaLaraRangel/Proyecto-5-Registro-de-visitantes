@@ -36,5 +36,6 @@ document.getElementById('safeinfo').addEventListener('click', event => {
     console.log('noooooo');
   });
 });
+
 // window.
 
