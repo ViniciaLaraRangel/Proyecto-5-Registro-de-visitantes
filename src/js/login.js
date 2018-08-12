@@ -1,16 +1,6 @@
 // JS p/ login.html//
 // alert('Ya está enlazado');
 
-var config = {
-  apiKey: 'AIzaSyBBL2vG5GR2GZnUkLrpPZ-mDbyKie8nxgM',
-  authDomain: 'registro-de-visitantes-a0747.firebaseapp.com',
-  databaseURL: 'https://registro-de-visitantes-a0747.firebaseio.com',
-  projectId: 'registro-de-visitantes-a0747',
-  storageBucket: 'registro-de-visitantes-a0747.appspot.com',
-  messagingSenderId: '629215938937'
-};
-firebase.initializeApp(config);
-
 function registro() {
   console.log('diste un click');
   let nombre = document.getElementById('nombre').value;
@@ -61,5 +51,5 @@ function entrar() {
   
 //   const auth = firebase.auth();
 //   const promise =
- auth.createUserWithEmailAndPassword(ml, pass);
+//  auth.createUserWithEmailAndPassword(ml, pass);
 // });
