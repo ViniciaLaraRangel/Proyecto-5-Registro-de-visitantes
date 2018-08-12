@@ -1,12 +1,6 @@
-/* CSS p/ login.html
-*{
-    padding: 0;
-    margin: 0;
-} */
-/*  */
-/*CSS p/ login.html*/ 
 /*CSS p/ login.html*/
-h1{
+
+/*h1{
     font-size: 2.5rem;
     display: block;
     text-align: center;
@@ -14,7 +8,8 @@ h1{
     margin-top: 50%;
     margin-bottom: 9%;
 }
- #nombre{
+
+#nombre{
     display: inline-block;
     margin-bottom: 0.8em;
     margin-left: 35%;
@@ -22,7 +17,8 @@ h1{
     border-color: grey;
     height: 7%;
 }
- #correo{
+
+#correo{
     display: inline-block;
     border-color: grey;
     margin-bottom: 0.5em;
@@ -30,7 +26,8 @@ h1{
     width: 260px;
     height: 7%;
 }
- #contraseña{
+
+#contraseña{
     display: inline-block;
     border-color: grey;
     margin-bottom: 0.5em;
@@ -38,10 +35,12 @@ h1{
     width: 260px;
     height: 7%;
 }
- .btn-dark{
+
+.btn-dark{
     margin-left: 35%;
 }
- #correo1{
+
+#correo1{
     display: inline-block;
     margin-bottom: 0.8em;
     margin-left: 75%;
@@ -51,7 +50,8 @@ h1{
     margin-top: 25%;
     height: 19%;
 }
- #contraseña1{
+
+#contraseña1{
     display: inline-block;
     margin-bottom: 0.8em;
     margin-left: 75%;
@@ -59,7 +59,8 @@ h1{
     border-color: grey;
     height: 19%;
 }
- .btn-register{
+
+.btn-register{
     margin-left: 35%;
     border: none;
-} 
+}
