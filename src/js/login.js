@@ -60,6 +60,6 @@ function entrar() {
   
 //   const auth = firebase.auth();
 //   const promise =
- auth.createUserWithEmailAndPassword(ml, pass);
+auth.createUserWithEmailAndPassword(ml, pass);
 // });
 
