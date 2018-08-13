@@ -25,26 +25,24 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container my-2">
         <div class="row">
-            <header>
-                <div class="col-md-4 btn-lg" id="header">
+            <div class="col-8 mt-3">
+                <header>
                     <img src="../css/pages/t1.jpg" alt="LogoT1" class="logo-t1">
+                </header>
+            </div>
+            <div class="col-4">
+                <nav>
                     <a href="../splashT1.html">
-                        <button class="btn btn-dark btn active">LogOut</button>
+                        <button class="btn btn-dark mt-3 active">LogOut</button>
                     </a>
-                </div>
-            </header>
-            <nav>
-                <div class="row text-center" id="nav">
-                    <div class="col-md-12">
-                        <h2>Agregar Visitante</h2>
-                    </div>
-                </div>
-            </nav>
-            <aside>
-                <!--Funcionalidad para toma de fotografía-->
-                <div class="col-md-4 offset-4 table-bordered" id="aside">
+                </nav>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 offset-4 table-bordered">
+                <aside>
                     <div class="booth px-1 py-1">
                         <a href="#" id="photo-shot" class="booth-capture"></a>
                         <video id="video" width="100" height="60"></video>
@@ -54,61 +52,62 @@
                             <strong>Click para fotografía</strong>
                         </button>
                     </div>
-                </div>
-            </aside>
-            <article>
-                <section>
-                    <form>
-                        <div class="row text-center">
-                            <!--Nombre completo-->
-                            <div class="col-md-12 btn-lg">
-                                <!--Nombre del invitado -->
-                                <div class="form-group">
-                                    <label for="user">Nombre completo</label>
-                                    <input type="text" id="username" class="form-control-lg btn-outline-dark" size="30px" id="user" placeholder="Ingresa tu nombre y apellido">
-                                </div>
-                            </div>
-
-                            <!--Correo del invitado -->
-                            <div class="col-md-12 btn-lg">
-                                <label for="mail">Correo electrónico</label>
-                                <input type="email" id="useremail" class="form-control-lg btn-outline-dark" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
-                            </div>
-
-                            <!--Miembro al que visita-->
-                            <div class="col-md-12 mt-3 btn-lg">
-                                <!--Nombre del invitado -->
-                                <div class="form-group">
-                                    <label for="anfitrión">¿A quién visita?</label>
+                </aside>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 text center">
+                <article>
+                    <h3>Agregar visitante</h3>
+                </article>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-3 btn-lg">
+                <form>
+                    <div class="form-group">
+                        <label for="user">Nombre completo</label>
+                        <input type="text" id="username" class="form-control-lg btn-outline-dark" size="30px" id="user" placeholder="Ingresa tu nombre y apellido">
+                    </div>
+                </form>
+            </div>
+            <div class="col-3 btn-lg">
+                <form>
+                    <label for="mail">Correo electrónico</label>
+                    <input type="email" id="useremail" class="form-control-lg btn-outline-dark" size="30px" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
+                </form>
+            </div>
+            <div class="col-3 mt-1 btn-lg">
+                <form>
+                        <div class="date">
+                                <label for="day">Fecha/hora</label>
+                                <input type="datetime-local" id="registerdate" class="btn-outline-dark" size="30px">
+                            </div>                    
+                </form>
+            </div>
+            <div class="col-3 btn-lg">
+                <form>
+                        <div class="form-group mb-1">
+                                <label for="anfitrión">¿A quién visita?
                                     <select name="memberList" id="member" class="form-control-lg btn-outline-dark" required>
-                                        <option value="" disabled selected>Selecciona</option>
+                                        <option value="text" disabled selected>Selecciona</option>
                                         <option value="KNF ENGINEERING">KNF ENGINEERING</option>
                                         <option value="AU HAUS">AU HAUS</option>
                                         <option value="LABORATORIA">LABORATORIA</option>
                                         <option value="UPSOCIAL">UPSOCIAL</option>
-                                        <!--<input type="text" id="memberName" class="form-control-lg mt-3" size="30px" id="member" placeholder="Ingresa nombre">-->
                                     </select>
-                                </div>
+                                </label>
                             </div>
-
-                            <!-- Input para agregar fecha y hora del registro -->
-                            <div class="col-md-12 mt-1 btn-lg">
-                                <div class="date">
-                                    <label for="day">Fecha y hora de registro</label>
-                                    <input type="datetime-local" id="registerdate">
-                                </div>
-                            </div>
-
-                            <!-- Botón para enviar el registro -->
-                            <div class="col-md-12 mt-2 btn-lg">
-                                <button id="safeinfo" class="btn btn-dark btn-lg active">Agregar</button>
-                            </div>
-                        </div>
-                    </form>
-                </section>
-            </article>
+                </form>
+            </div>
+            <div class="col-12">
+                <form>
+                        <button id="safeinfo" class="btn btn-dark btn-lg active">Agregar</button>
+                </form>
+            </div>
         </div>
     </div>
+
     <!--Enlaces de bootstrap 4-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -118,6 +117,9 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <!--Enlace a sweet alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
 
     <!--Enlace a firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">

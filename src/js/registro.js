@@ -33,7 +33,7 @@ document.getElementById('safeinfo').addEventListener('click', event => {
   }).then(result => {
     location.reload(true);
   }).catch(error => {
-    console.log('noooooo');
+  
   });
 });
 
