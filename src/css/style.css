@@ -3,4 +3,7 @@ p {
     text-align: center;
     font-size: 60px;
 }
-
+/*Para centrar gif p/splash*/
+.centrar-Gif {
+    height: 100vh;
+}
