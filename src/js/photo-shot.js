@@ -1,5 +1,3 @@
-
-
 console.log('HOLA!');	
 (function() {
   var video = document.getElementById('video'),

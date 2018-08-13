@@ -27,29 +27,33 @@
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-md-12 mb-4">
-                <p>Bienvenidx a</p>
+                <p>Bienvenidx</p>
             </div>
             <div class="col-md-12 mb-4">
-                <img src="css/pages/t1.jpg" alt="Terminal 1">
+                <img src="css/pages/T1Captura.PNG" id="logo" alt="Terminal 1">
             </div>
             <div class="col-md-12 mt-3 btn-lg">
-                <input type="text" id="correo" placeholder="Ingresa tu correo" class="btn-outline-dark">
+                <span>Ingresa tu correo:</span>
+                <br>
+                <input type="text" id="correo" placeholder="">
             </div>
             <br>
             <div class="col-md-12 mt-3 btn-lg">
-                <input type="password" id="contraseña1" placeholder="Ingresa tu contraseña" class="btn-outline-dark">
+                <span>Ingresa tu contraseña:</span>
+                <br>
+                <input type="password" id="contraseña1" placeholder="">
             </div>
             <!--Aquí hay que cambiar a un addEventListener-->
             <div class="col-md-12 mt-2 btn-lg">
                 <a href="html/registro.html">
-                    <button class="btn btn-light btn-outline-dark" id="ingresa" onclick="entrar()">
+                    <button class="btn btn-light btn-outline" id="ingresa" onclick="entrar()">
                         <strong>Ingresa</strong>
                     </button>
                 </a>
             </div>
             <!-- Jos Aqui inicia lo que hice -->
             <button type="button" class="btn btn-outline-dark mt-4 ml-4" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                <strong>Registrar nuevo miembro</strong>
+                <strong>Nuevo miembro</strong>
             </button>
             <!--Modal de registro -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -102,7 +106,6 @@
             <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">
             </script>
         <!--Enlaces a las hojas de JavaScript-->
-        <script src="js/index.js"></script>
         <script src="js/login.js"></script>
 </body>
 
