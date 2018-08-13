@@ -30,7 +30,8 @@ btnAddMember.addEventListener('click', (event) => {
   const promise = auth.createUserWithEmailAndPassword(ml, pass);
 
   promise.then(function(docRef) {
-    console.log('document write with ID:', docRef.id);//falta que me lance el id
+    console.log('document write with ID:', docRef.id); // falta que me lance el id
+    // se pide que cuando ejecute la funcion deje los campos vacios una vez que se envie la info
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('password1').value = '';
@@ -39,3 +40,5 @@ btnAddMember.addEventListener('click', (event) => {
       console.error('Error adding document:', error);
     });
 });
+
+
