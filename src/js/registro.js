@@ -11,6 +11,7 @@ let config = {
 firebase.initializeApp(config);
 
 let db = firebase.firestore();
+
 document.getElementById('safeinfo').addEventListener('click', event => {
   event.preventDefault();
   const nombre = document.getElementById('username').value;
@@ -28,10 +29,3 @@ document.getElementById('safeinfo').addEventListener('click', event => {
     console.log('noooooo');
   });
 });
-
-
-// db.collection('users').get().then((querySnapshot) => {
-//   querySnapshot.forEach((doc) => {
-//     console.log(`${doc.id} => ${doc.data()}`);
-//   });
-// });
