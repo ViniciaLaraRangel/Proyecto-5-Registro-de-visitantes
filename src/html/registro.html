@@ -40,20 +40,18 @@
                     </div>
                 </div>
             </nav>
-           <!-- <aside>
-                Funcionalidad para toma de fotografía
-                <div class="col-md-4 offset-4 table-bordered" id="aside">
-                    <div class="booth px-1 py-1">
+                <div class="col-md-4 mt-3 table-bordered justify-content-start">
+                    <div class="booth align-items-center px-1 py-1">
+                        <video id="video" width="400" height="300"></video>
                         <a href="#" id="photo-shot" class="booth-capture"></a>
-                        <video id="video" width="100" height="60"></video>
-                        <!--Controles
-                        <canvas id="canvas" width="100" height="60"></canvas>
+                        <!--Controles-->
+                        <canvas id="canvas" width="80" height="60"></canvas>
                         <button class="btn-outline-dark">
                             <strong>Click para fotografía</strong>
                         </button>
                     </div>
                 </div>
-            </aside>-->
+            </aside>
             <article>
                 <section>
                     <form>
@@ -111,7 +109,46 @@
                 </a>
             </div>
         </div>
+            </div>
+        </aside>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-2 btn-lg">
+                    <div class="form-group">
+                        <label for="user">Nombre completo</label>
+                        <input type="text" id="username" class="form-control-lg btn-outline-dark" size="30px" id="user" placeholder="Ingresa tu nombre y apellido">
+                    </div>
+                </div>
+                <div class="col-md-6 btn-lg">
+                    <label for="mail">Correo electrónico</label>
+                    <input type="email" id="useremail" class="form-control-lg btn-outline-dark" size="30px" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
+                </div>
+                <div class="col-md-6 mt-1 btn-lg">
+                    <div class="date">
+                        <label for="day">Fecha/hora</label>
+                        <input type="datetime-local" id="registerdate" class="btn-outline-dark" size="30px">
+                    </div>
+                </div>
+                <div class="col-md-6 btn-lg">
+                    <div class="form-group mb-1">
+                        <label for="anfitrión">¿A quién visita?
+                            <select name="memberList" id="member" class="form-control-lg btn-outline-dark" required>
+                                <option value="text" disabled selected>Selecciona</option>
+                                <option value="KNF ENGINEERING">KNF ENGINEERING</option>
+                                <option value="AU HAUS">AU HAUS</option>
+                                <option value="LABORATORIA">LABORATORIA</option>
+                                <option value="UPSOCIAL">UPSOCIAL</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="safeinfo" class="btn btn-dark btn-lg justify-content-center active">Agregar</button>
+                </div>
+            </div>
     </div>
+
     <!--Enlaces de bootstrap 4-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -121,12 +158,16 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <!--Enlace a sweet alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
 
     <!--Enlace a firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">
     </script>
 
     <!--Enlaces a las hojas de JavaScript-->
+    <script src="../js/index.js"></script>
     <script src="../js/registro.js"></script>
     <script src="../js/photo-shot.js"></script>
 
