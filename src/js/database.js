@@ -24,7 +24,7 @@ window.memberadd = () =>{
         <th> ${memb}</th>
         <th> ${dt}</th>
         <th> ${hr}</th>
-      
+     
       <tr>
       `;
     });
