@@ -25,87 +25,79 @@
 </head>
 
 <body>
-    <div class="container my-2">
-        <div class="row">
-            <div class="col-8 mt-3">
-                <header>
+    <div class="container-fluid my-2">
+        <header>
+            <div class="row">
+                <div class="col-md-8">
                     <img src="../css/pages/t1.jpg" alt="LogoT1" class="logo-t1">
-                </header>
+                </div>
+                <div class="col-md-4">
+                    <nav>
+                        <a href="../splashT1.html">
+                            <button class="btn btn-dark mt-3 active">LogOut</button>
+                        </a>
+                    </nav>
+                </div>
             </div>
-            <div class="col-4">
-                <nav>
-                    <a href="../splashT1.html">
-                        <button class="btn btn-dark mt-3 active">LogOut</button>
-                    </a>
-                </nav>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4 offset-4 table-bordered">
-                <aside>
-                    <div class="booth px-1 py-1">
+        </header>
+        <aside>
+            <div class="row">
+                <div class="col-md-4 mt-3 offset-4 table-bordered justify-content-between">
+                    <div class="booth align-items-center px-1 py-1">
+                        <video id="video" width="400" height="300"></video>
                         <a href="#" id="photo-shot" class="booth-capture"></a>
-                        <video id="video" width="100" height="60"></video>
                         <!--Controles-->
-                        <canvas id="canvas" width="100" height="60"></canvas>
+                        <canvas id="canvas" width="80" height="60"></canvas>    
                         <button class="btn-outline-dark">
                             <strong>Click para fotografía</strong>
                         </button>
                     </div>
-                </aside>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 text center">
-                <article>
+        </aside>
+        <article>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-12 text center">
                     <h3>Agregar visitante</h3>
-                </article>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-3 btn-lg">
-                <form>
+        </article>
+        <form>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-3 btn-lg">
                     <div class="form-group">
                         <label for="user">Nombre completo</label>
                         <input type="text" id="username" class="form-control-lg btn-outline-dark" size="30px" id="user" placeholder="Ingresa tu nombre y apellido">
                     </div>
-                </form>
-            </div>
-            <div class="col-3 btn-lg">
-                <form>
+                </div>
+                <div class="col-md-3 btn-lg">
                     <label for="mail">Correo electrónico</label>
                     <input type="email" id="useremail" class="form-control-lg btn-outline-dark" size="30px" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
-                </form>
+                </div>
+                <div class="col-md-3 mt-1 btn-lg">
+                    <div class="date">
+                        <label for="day">Fecha/hora</label>
+                        <input type="datetime-local" id="registerdate" class="btn-outline-dark" size="30px">
+                    </div>
+                </div>
+                <div class="col-md-3 btn-lg">
+                    <div class="form-group mb-1">
+                        <label for="anfitrión">¿A quién visita?
+                            <select name="memberList" id="member" class="form-control-lg btn-outline-dark" required>
+                                <option value="text" disabled selected>Selecciona</option>
+                                <option value="KNF ENGINEERING">KNF ENGINEERING</option>
+                                <option value="AU HAUS">AU HAUS</option>
+                                <option value="LABORATORIA">LABORATORIA</option>
+                                <option value="UPSOCIAL">UPSOCIAL</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="col--md-12">
+                    <button id="safeinfo" class="btn btn-dark btn-lg active">Agregar</button>
+                </div>
             </div>
-            <div class="col-3 mt-1 btn-lg">
-                <form>
-                        <div class="date">
-                                <label for="day">Fecha/hora</label>
-                                <input type="datetime-local" id="registerdate" class="btn-outline-dark" size="30px">
-                            </div>                    
-                </form>
-            </div>
-            <div class="col-3 btn-lg">
-                <form>
-                        <div class="form-group mb-1">
-                                <label for="anfitrión">¿A quién visita?
-                                    <select name="memberList" id="member" class="form-control-lg btn-outline-dark" required>
-                                        <option value="text" disabled selected>Selecciona</option>
-                                        <option value="KNF ENGINEERING">KNF ENGINEERING</option>
-                                        <option value="AU HAUS">AU HAUS</option>
-                                        <option value="LABORATORIA">LABORATORIA</option>
-                                        <option value="UPSOCIAL">UPSOCIAL</option>
-                                    </select>
-                                </label>
-                            </div>
-                </form>
-            </div>
-            <div class="col-12">
-                <form>
-                        <button id="safeinfo" class="btn btn-dark btn-lg active">Agregar</button>
-                </form>
-            </div>
-        </div>
+        </form>
     </div>
 
     <!--Enlaces de bootstrap 4-->
