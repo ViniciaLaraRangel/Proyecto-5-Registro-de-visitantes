@@ -1,5 +1,5 @@
 // JS p/ login.html//
-alert('Ya está enlazado');
+//alert('Ya está enlazado');
 var config = {
   apiKey: 'AIzaSyBBL2vG5GR2GZnUkLrpPZ-mDbyKie8nxgM',
   authDomain: 'registro-de-visitantes-a0747.firebaseapp.com',
