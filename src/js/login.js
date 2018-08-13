@@ -40,3 +40,25 @@ function entrar() {
     // ...
   });
 }
+
+let btnAddMember = document.getElementById('newMember')
+let names = document.getElementById('name');
+let email = document.getElementById('mail');
+let password = document.getElementById('ps');
+
+
+btnAddMember.addEventListener('click', (e) => {  
+  console.log(e);
+  let nm = names.value;
+  console.log(nm);
+  
+  let pass = password.value;
+  console.log(pass);
+  
+  let ml = email.value;
+  console.log(ml);
+  
+  const auth = firebase.auth();
+  const promise = auth.createUserWithEmailAndPassword(ml, pass);
+});
+
