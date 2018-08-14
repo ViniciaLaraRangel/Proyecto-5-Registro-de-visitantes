@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Agregando bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--Agregando font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <!--Título de login y agregar favicon/logo del producto-->
+    <link rel="shortcut icon" href="../css/pages/IsotipoT1.jpg">
+    <!--Enlaces a las hojas de estilo-->
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Ingresa</title>
+</head>
+
+<body>
+        <!--Navbar-->
+        <nav class="navbar navbar-light light-blue lighten-4">
+        
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">Regresar</a>
+        
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fa fa-bars fa-1x"></i></span></button>
+        
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"id="visit" href="registro.html">Registro de Visitantes </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="members" href="../index.html">Registro de Miembros</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+        
+            </div>
+            <!-- Collapsible content -->
+        
+        </nav>
+        <!--/.Navbar-->
+
+    <h2>Visitantes</h2>
+    <table class="table-data">
+        <thead>
+          <tr>
+            <!-- <th scope="col">Fotografia</th> -->
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Visitado</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+          </tr>
+        </thead>
+        <tbody id="baseTable">
+        
+        
+        </tbody>
+      </table>
+
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">
+      </script>
+
+
+
+  <!--Enlaces a las hojas de JavaScript-->
+  <script src="../js/index.js"></script> 
+  <script src="../js/database.js"></script>
+
+</body>
+
+</html>

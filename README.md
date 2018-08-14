@@ -61,6 +61,7 @@ En Segundo lugar, detectamos un importante pain point con la miembro del coworki
 ![Plataforma miembros A255](src/ux/pl04.jpeg)
 
 
+
 ## Historia de Usuarixs
 
 | Historia de Usuarix  Nr.1|
@@ -68,7 +69,9 @@ En Segundo lugar, detectamos un importante pain point con la miembro del coworki
 | Fecha:  08/08/2018|
 | Nombre de la Usuaria:  Diana Sánchez |
 | Edad: 28 años |
-| Título28 años |
+
+
+| Título: Registro |
 | Voy a una entrevista de trabajo a una empresa cuyas oficinas están en un coworking. Gracias al tráfico voy con el tiempo justo para la entrevista. Temo que al llegar al coworking tenga que perder mucho tiempo en registrarme. Me gustaría que el registro fuera más rápido y ágil para no llegar tarde a mi entrevista.|
 |Historia de Usuarix Nr.2|
 |---|
@@ -80,7 +83,6 @@ En Segundo lugar, detectamos un importante pain point con la miembro del coworki
 ---------
 |Historia de Usuarix Nr.3|
 |---|
-
 |Fecha: 08/08/2018|
 |Nombre de la Usuaria: Adriana Sivan|
 |Edad: 35 años|

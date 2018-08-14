@@ -1,49 +1,111 @@
-<!--Primera vista ==> Página de bienvenida. Aquí direcciona de acuerdo a la elección del user (adminUser o visitor)-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--Agregando bootstrap 4-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 
     <!--Agregando font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous" >
+        crossorigin="anonymous">
 
     <!--Título de la página principal y agregar favicon/logo del producto-->
-    <link rel="shortcut icon" href="css/pages/gamaDeColores-favicon.png">
-    
+    <link rel="shortcut icon" href="css/pages/IsoLogoT1.PNG">
+
     <!--Enlaces a las hojas de estilo-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
     <title>Bievenido</title>
 </head>
 
 <body>
-    <!--Botón de prueba de bootstrap-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                    <h2>Bievenidx</h2>
-                    <button class="btn btn-primary btn-lg active">Administrador</button>
-                    <button class="btn btn-secundary btn-lg active">Miembro</button>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-12 mb-4">
+                <p>Bienvenidx</p>
+            </div>
+            <div class="col-md-12 mb-4">
+                <img src="css/pages/T1Captura.PNG" id="logo" alt="Terminal 1">
+            </div>
+            <div class="col-md-12 mt-3 btn-lg">
+                <span>Ingresa tu correo:</span>
+                <br>
+                <input type="text" id="correo" placeholder="">
+            </div>
+            <br>
+            <div class="col-md-12 mt-3 btn-lg">
+                <span>Ingresa tu contraseña:</span>
+                <br>
+                <input type="password" id="contraseña1" placeholder="">
+            </div>
+            <!--Aquí hay que cambiar a un addEventListener-->
+            <div class="col-md-12 mt-2 btn-lg">
+                <a href="html/registro.html">
+                    <button class="btn btn-light btn-outline" id="ingresa" onclick="entrar()">
+                        <strong>Ingresa</strong>
+                    </button>
+                </a>
+            </div>
+            <!-- Jos Aqui inicia lo que hice -->
+            <button type="button" class="btn btn-outline-dark mt-4 ml-4" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                <strong>Nuevo miembro</strong>
+            </button>
+            <!--Modal de registro -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Formulario de registro</h5>
+                            <!--"x" para cerrar el modal-->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                    <div class="form-group">
+                                            <label for="name" class="col-form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">Correo</label>
+                                    <input type="text" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password1" class="col-form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password1">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id = "newMember" class="btn btn-dark">Registrar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </div>    
+    <!-- Aqui termina mi intervencion Jos -->
 
-    <!--Enlaces de bootstrap 4-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        <!--Enlaces de bootstrap 4-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <!--Enlaces a las hojas de JavaScript-->
-    <script src="js/index.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+            <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">
+            </script>
+        <!--Enlaces a las hojas de JavaScript-->
+        <script src="js/login.js"></script>
 </body>
+
 </html>
