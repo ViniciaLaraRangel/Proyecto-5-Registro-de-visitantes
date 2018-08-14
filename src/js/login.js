@@ -35,6 +35,7 @@ btnAddMember.addEventListener('click', (event) => {
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('password1').value = '';
+    alert('Registro completado');
   })
     .catch(function(error) {
       console.error('Error adding document:', error);
