@@ -7,5 +7,5 @@ var config = {
   projectId: 'registro-de-visitantes-a0747',
   storageBucket: 'registro-de-visitantes-a0747.appspot.com',
   messagingSenderId: '629215938937'
-};
-firebase.initializeApp(config);
+ };
+ firebase.initializeApp(config);

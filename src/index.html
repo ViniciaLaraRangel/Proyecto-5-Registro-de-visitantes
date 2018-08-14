@@ -26,86 +26,98 @@
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-md-12 mb-4">
-                <p>Bienvenidx</p>
+                <h1>Bienvenidx</h1>
             </div>
             <div class="col-md-12 mb-4">
                 <img src="css/pages/T1Captura.PNG" id="logo" alt="Terminal 1">
             </div>
-            <div class="col-md-12 mt-3 btn-lg">
+            <div class="col-md-12 btn-lg">
                 <span>Ingresa tu correo:</span>
                 <br>
                 <input type="text" id="correo" placeholder="">
             </div>
             <br>
-            <div class="col-md-12 mt-3 btn-lg">
+            <div class="col-md-12 btn-lg">
                 <span>Ingresa tu contraseña:</span>
                 <br>
                 <input type="password" id="contraseña1" placeholder="">
             </div>
+        </div>
+        <div class="row text-center">
             <!--Aquí hay que cambiar a un addEventListener-->
-            <div class="col-md-12 mt-2 btn-lg">
+            <div class="col-md-8 mt-2 btn-lg justify-content-center text-center offset-2">
                 <a href="html/registro.html">
-                    <button class="btn btn-light btn-outline" id="ingresa" onclick="entrar()">
+                    <button class="btn btn-outline-dark" id="ingresa" onclick="entrar()">
                         <strong>Ingresa</strong>
                     </button>
                 </a>
             </div>
-            <!-- Jos Aqui inicia lo que hice -->
-            <button type="button" class="btn btn-outline-dark mt-4 ml-4" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                <strong>Nuevo miembro</strong>
-            </button>
             <!--Modal de registro -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Formulario de registro</h5>
-                            <!--"x" para cerrar el modal-->
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
+            <div class="col-md-3 mt-2 btn-lg justify-content-left">
+                <button type="button" class="btn btn-outline-dark mt-4 ml-4" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                    <strong> +Nuevo miembro</strong>
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Formulario de registro</h5>
+                                <!--"x" para cerrar el modal-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
                                     <div class="form-group">
-                                            <label for="name" class="col-form-label">Nombre</label>
-                                            <input type="text" class="form-control" id="name">
-                                        </div>
-                                <div class="form-group">
-                                    <label for="email" class="col-form-label">Correo</label>
-                                    <input type="text" class="form-control" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password1" class="col-form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="password1">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" id = "newMember" class="btn btn-dark">Registrar</button>
+                                        <label for="name" class="col-form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-form-label">Correo</label>
+                                        <input type="text" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password1" class="col-form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="password1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="newMember" class="btn btn-dark">Registrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Aqui termina mi intervencion Jos -->
+            <div class="col-md-3 mt-2 btn-lg justify-content-center text-left offset-2">
+                    <a href="html/database.html">
+                        <button class="btn btn-outline-dark" id="ingresa" onclick="entrar()">
+                            <strong>Registro de Visitantes</strong>
+                        </button>
+                    </a>
+                </div>
         </div>
-    </div>    
-    <!-- Aqui termina mi intervencion Jos -->
+    </div>
 
-        <!--Enlaces de bootstrap 4-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+    <!--Enlaces de bootstrap 4-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 
-            <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">
-            </script>
-        <!--Enlaces a las hojas de JavaScript-->
-        <script src="js/login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">
+    </script>
+    <!--Enlaces a las hojas de JavaScript-->
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

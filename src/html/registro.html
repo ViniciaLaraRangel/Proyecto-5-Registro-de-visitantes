@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="../css/pages/IsoLogoT1.PNG">
 
     <!--Enlaces a las hojas de estilo-->
-    <link rel="stylesheet" href="../css/registro.css">
+    <!--<link rel="stylesheet" href="../css/registro.css">-->
     <title>Registro de invitados</title>
 </head>
 
@@ -39,22 +39,22 @@
                     </div>
                 </div>
             </nav>
-                <div class="col-md-4 mt-3 table-bordered justify-content-start">
-                    <div class="booth align-items-center px-1 py-1">
-                        <video id="video" width="400" height="300"></video>
-                        <a href="#" id="photo-shot" class="booth-capture"></a>
-                        <!--Controles-->
-                        <canvas id="canvas" width="80" height="60"></canvas>
-                        <button class="btn-outline-dark">
-                            <strong>Click para fotografía</strong>
-                        </button>
-                    </div>
+            <div class="col-md-4 mt-3 table-bordered justify-content-start">
+                <div class="booth align-items-center px-1 py-1">
+                    <video id="video" width="400" height="300"></video>
+                    <a href="#" id="photo-shot" class="booth-capture"></a>
+                    <!--Controles-->
+                    <canvas id="canvas" width="80" height="60"></canvas>
+                    <button class="btn-outline-dark">
+                        <strong>Click para fotografía</strong>
+                    </button>
                 </div>
+            </div>
             </aside>
             <article>
                 <section>
                     <form>
-                        <div class="row text-center">
+                        <div class="row">
                             <!--Nombre completo-->
                             <div class="col-md-12 btn-lg">
                                 <!--Nombre del invitado -->
@@ -69,7 +69,8 @@
                                 <label for="mail">Correo electrónico:</label>
                                 <input type="email" id="useremail" class="form-control-lg" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
                             </div>
-
+                        </div>
+                        <div class="row">
                             <!--Miembro al que visita-->
                             <div class="col-md-12 mt-3 btn-lg">
                                 <!--Nombre del invitado -->
@@ -87,7 +88,7 @@
                             </div>
 
                             <!-- Input para agregar fecha y hora del registro -->
-                            <div class="col-md-12 mt-1 btn-lg">
+                            <div class="col-md-12 mt-4 btn-lg">
                                 <div class="date">
                                     <label for="day">Fecha y hora de registro</label>
                                     <input type="datetime-local" id="registerdate">
@@ -108,44 +109,44 @@
                 </a>
             </div>
         </div>
+    </div>
+    </aside>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-2 btn-lg">
+            <div class="form-group">
+                <label for="user">Nombre completo</label>
+                <input type="text" id="username" class="form-control-lg btn-outline-dark" size="30px" id="user" placeholder="Ingresa tu nombre y apellido">
             </div>
-        </aside>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-2 btn-lg">
-                    <div class="form-group">
-                        <label for="user">Nombre completo</label>
-                        <input type="text" id="username" class="form-control-lg btn-outline-dark" size="30px" id="user" placeholder="Ingresa tu nombre y apellido">
-                    </div>
-                </div>
-                <div class="col-md-6 btn-lg">
-                    <label for="mail">Correo electrónico</label>
-                    <input type="email" id="useremail" class="form-control-lg btn-outline-dark" size="30px" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
-                </div>
-                <div class="col-md-6 mt-1 btn-lg">
-                    <div class="date">
-                        <label for="day">Fecha/hora</label>
-                        <input type="datetime-local" id="registerdate" class="btn-outline-dark" size="30px">
-                    </div>  
-                </div>
-                <div class="col-md-6 btn-lg">
-                    <div class="form-group mb-1">
-                        <label for="anfitrión">¿A quién visita?
-                            <select name="memberList" id="member" class="form-control-lg btn-outline-dark" required>
-                                <option value="text" disabled selected>Selecciona</option>
-                                <option value="KNF ENGINEERING">KNF ENGINEERING</option>
-                                <option value="AU HAUS">AU HAUS</option>
-                                <option value="LABORATORIA">LABORATORIA</option>
-                                <option value="UPSOCIAL">UPSOCIAL</option>
-                            </select>
-                        </label>
-                    </div>
-                </div>
+        </div>
+        <div class="col-md-6 btn-lg">
+            <label for="mail">Correo electrónico</label>
+            <input type="email" id="useremail" class="form-control-lg btn-outline-dark" size="30px" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
+        </div>
+        <div class="col-md-6 mt-1 btn-lg">
+            <div class="date">
+                <label for="day">Fecha/hora</label>
+                <input type="datetime-local" id="registerdate" class="btn-outline-dark" size="30px">
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <button id="safeinfo" class="btn btn-dark btn-lg justify-content-center active">Agregar</button>
-                </div>
+        </div>
+        <div class="col-md-6 btn-lg">
+            <div class="form-group mb-1">
+                <label for="anfitrión">¿A quién visita?
+                    <select name="memberList" id="member" class="form-control-lg btn-outline-dark" required>
+                        <option value="text" disabled selected>Selecciona</option>
+                        <option value="KNF ENGINEERING">KNF ENGINEERING</option>
+                        <option value="AU HAUS">AU HAUS</option>
+                        <option value="LABORATORIA">LABORATORIA</option>
+                        <option value="UPSOCIAL">UPSOCIAL</option>
+                    </select>
+                </label>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button id="safeinfo" class="btn btn-dark btn-lg justify-content-center active">Agregar</button>
+        </div>
+    </div>
     </div>
 
     <!--Enlaces de bootstrap 4-->

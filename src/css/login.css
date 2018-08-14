@@ -1,5 +1,9 @@
 /*CSS p/ login.html*/
 
+body {
+    background: linear-gradient( #fffdff, #000000);
+}
+
 /*h1{
     font-size: 2.5rem;
     display: block;

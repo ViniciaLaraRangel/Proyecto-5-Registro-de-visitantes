@@ -5,7 +5,7 @@ let db = firebase.firestore();
 window.memberadd = () =>{
   let tble = document.getElementById('baseTable');
   const mb = db.collection('register').orderBy('date', 'asc');
-//   let tble = document.getElementById('baseTable');
+  //   let tble = document.getElementById('baseTable');
   mb.get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
       let name = doc.data().name;
